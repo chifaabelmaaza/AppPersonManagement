@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.emsi.applicationgestionpersonne.view.LoginController">
+   <left>
+      <AnchorPane layoutX="200.0" layoutY="400.0" prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #6D908F;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-5.0" layoutY="82.0" prefHeight="115.0" prefWidth="229.0" text="Class" textFill="#fcf8f8">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="118.0" prefHeight="200.0" prefWidth="228.0" text="Management" textFill="#fcf8f8">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="181.0" prefWidth="200.0" />
+            <RadioButton layoutX="28.0" layoutY="82.0" mnemonicParsing="false" textFill="#d3e7df" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="346.0" prefHeight="14.0" prefWidth="151.0" text="Copyright (MC) . All Rights Reserved" textFill="#fffbfb">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="368.0" prefHeight="12.0" prefWidth="102.0" text="Made By Mokhtar,Chifaa" textFill="#fffefe">
+               <font>
+                  <Font name="Calibri Italic" size="9.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="520.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="loginmessage" alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="86.0" prefHeight="30.0" prefWidth="320.0" textFill="#ff0101">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="41.0" prefHeight="36.0" prefWidth="326.0" text="Secured Connection">
+               <font>
+                  <Font name="Calibri Bold Italic" size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="128.0" prefHeight="26.0" prefWidth="65.0" text="Email" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="185.0" prefHeight="7.0" prefWidth="77.0" text="Password" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailfield" layoutX="136.0" layoutY="129.0" prefHeight="25.0" prefWidth="189.0" />
+            <PasswordField fx:id="passwordfield" layoutX="136.0" layoutY="184.0" prefWidth="189.0" />
+            <Button fx:id="loginbtn" alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="250.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="29.0" prefWidth="300.0" style="-fx-background-color: #6D908F;" text="Login" textFill="#fcf9f9">
+               <font>
+                  <Font name="Calibri Italic" size="16.0" />
+               </font></Button>
+            <Button fx:id="cancelbtn" alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="299.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="27.0" prefWidth="299.0" style="-fx-background-color: #6D908F;" text="Cancel" textFill="#fcf9f9">
+               <font>
+                  <Font name="Calibri Italic" size="16.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </right>
+</BorderPane>
